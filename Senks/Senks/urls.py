@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from mysite.views import current_datetime #, hours_ahead
+from senks.views import current_datetime #, hours_ahead
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
