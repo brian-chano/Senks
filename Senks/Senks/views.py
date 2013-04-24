@@ -1,8 +1,17 @@
 from django.template.loader import get_template
+
 from django.template import Context
+
 from django.http import HttpResponse
+
 from django.shortcuts import render_to_response
+
 import datetime
+
+
+def current_datetime(request):
+	current_datetime = datetime.datetime.now()
+	return render_to_response('current_datetime.html', locals())
 
 #def current_datetime(request):
 #	now = datetime.datetime.now()
@@ -16,7 +25,3 @@ import datetime
 #	dt = datetime.datetime.now() + datetime.timedelta(hours=offset)
 #	html = "<html><body><h1><center>In %s hours(s), it will be %s. </center></h1></body></html>" % (offset, dt)
 #	return HttpResponse(html)
-
-def current_datetime(request):
-	current_datetime = datetime.datetime.now()
-	return render_to_response('current_datetime.html', locals())
