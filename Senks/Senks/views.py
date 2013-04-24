@@ -17,9 +17,6 @@ def hours_ahead(request, offset):
 	offset = int(offset)
 	dt = datetime.datetime.now() + datetime.timedelta(hours=offset)
 	return render_to_response('future_datetime.html', locals())
-	#html = "<html><body><h1><center>In %s hours(s), it will be %s. </center></h1></body></html>" % (offset, dt)
-	#return HttpResponse(html)
-
 
 #def current_datetime(request):
 #	now = datetime.datetime.now()
