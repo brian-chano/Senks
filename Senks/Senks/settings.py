@@ -89,6 +89,7 @@ SECRET_KEY = 'm_8113%g!l^fyzo8o99z*zy*h@r3!je1c#cjeo9kxx)%t4=my#'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
+
 #     'django.template.loaders.eggs.Loader',
 )
 
@@ -108,6 +109,7 @@ ROOT_URLCONF = 'Senks.urls'
 WSGI_APPLICATION = 'Senks.wsgi.application'
 
 TEMPLATE_DIRS = (
+    'Senks/Templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
